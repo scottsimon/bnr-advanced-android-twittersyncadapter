@@ -17,14 +17,21 @@ package com.bignerdranch.android.twittersyncadapter.model;
 
 import android.content.ContentValues;
 import com.bignerdranch.android.twittersyncadapter.contentprovider.DatabaseContract;
+import com.google.gson.annotations.SerializedName;
 
 /**
  * Created by scotts on 10/22/15.
  */
 public class User {
   private int mId;
+
+  @SerializedName("id_str")
   private String mServerId;
+
+  @SerializedName("screen_name")
   private String mScreenName;
+
+  @SerializedName("profile_image_url")
   private String mPhotoUrl;
 
   public User(String serverId, String screenName, String photoUrl) {
@@ -45,4 +52,11 @@ public class User {
     return mServerId;
   }
 
+  public String getScreenName() {
+    return mScreenName;
+  }
+
+  public String getPhotoUrl() {
+    return mPhotoUrl;
+  }
 }

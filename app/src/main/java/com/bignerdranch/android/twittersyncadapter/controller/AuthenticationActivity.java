@@ -46,7 +46,7 @@ public class AuthenticationActivity extends AccountAuthenticatorActivity {
 
   private static final String CALLBACK_URL = "http://www.bignerdranch.com";
 
-  private static final String OAUTH_TOKEN_SECRET_KEY = "com.bignerdranch.android.twittersyncadapter.OAUTH_TOKEN_SECRET";
+  public static final String OAUTH_TOKEN_SECRET_KEY = "com.bignerdranch.android.twittersyncadapter.OAUTH_TOKEN_SECRET";
 
   private static final String EXTRA_ACCOUNT_TYPE = "com.bignerdranch.android.twittersyncadapter.ACCOUNT_TYPE";
 
