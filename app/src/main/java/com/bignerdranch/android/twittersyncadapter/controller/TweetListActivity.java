@@ -3,6 +3,7 @@ package com.bignerdranch.android.twittersyncadapter.controller;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import com.bignerdranch.android.twittersyncadapter.R;
 
 public class TweetListActivity extends AppCompatActivity {
@@ -13,9 +14,9 @@ public class TweetListActivity extends AppCompatActivity {
     setContentView(R.layout.activity_tweet_list);
 
     // default generated code...
-//    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//    setSupportActionBar(toolbar);
-//
+    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+    setSupportActionBar(toolbar);
+
 //    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //    fab.setOnClickListener(new View.OnClickListener() {
 //      @Override
